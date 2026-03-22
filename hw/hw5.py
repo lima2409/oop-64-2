@@ -1,3 +1,9 @@
+class User:
+    def __init__(self, name: str, role: str):
+        self.name = name
+        self.role = role
+
+
 def is_admin(func):
     def wrapper(user: User):
         if user.role == "admin":
